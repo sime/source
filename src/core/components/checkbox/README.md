@@ -54,6 +54,18 @@ const Form = () => {
 
 Gets passed as the name attribute for each checkbox
 
+### `label`
+
+**`string`**
+
+Appears as a legend at the top of the checkbox group
+
+### `supporting`
+
+**`string`**
+
+Additional text that appears below the label
+
 ### `error`
 
 **`string`**

@@ -12,6 +12,7 @@ import {
 const errorLight = () => (
 	<ThemeProvider theme={checkboxDefault}>
 		<CheckboxGroup
+			id="tandcs"
 			name="tandcs"
 			error="Tick the box to accept the terms and conditions"
 		>
@@ -30,6 +31,7 @@ errorLight.story = {
 const errorBlue = () => (
 	<ThemeProvider theme={checkboxBrand}>
 		<CheckboxGroup
+			id="tandcs"
 			name="tandcs"
 			error="Tick the box to accept the terms and conditions"
 		>
