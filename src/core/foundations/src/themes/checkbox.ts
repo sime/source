@@ -6,11 +6,7 @@ import {
 	brandBackground,
 	brandText,
 } from "@guardian/src-foundations/palette"
-import {
-	userFeedbackDefault,
-	userFeedbackBrand,
-	UserFeedbackTheme,
-} from "./user-feedback"
+import { labelDefault, labelBrand, LabelTheme } from "./label"
 
 export type CheckboxTheme = {
 	border: string
@@ -25,7 +21,7 @@ export type CheckboxTheme = {
 
 export const checkboxDefault: {
 	checkbox: CheckboxTheme
-	userFeedback: UserFeedbackTheme
+	label: LabelTheme
 } = {
 	checkbox: {
 		border: border.input,
@@ -37,12 +33,12 @@ export const checkboxDefault: {
 		textLabelSupporting: text.inputLabelSupporting,
 		textIndeterminate: text.supporting,
 	},
-	...userFeedbackDefault,
+	...labelDefault,
 }
 
 export const checkboxBrand: {
 	checkbox: CheckboxTheme
-	userFeedback: UserFeedbackTheme
+	label: LabelTheme
 } = {
 	checkbox: {
 		border: brandBorder.input,
@@ -54,5 +50,5 @@ export const checkboxBrand: {
 		textLabelSupporting: brandText.inputLabelSupporting,
 		textIndeterminate: brandText.supporting,
 	},
-	...userFeedbackBrand,
+	...labelBrand,
 }
